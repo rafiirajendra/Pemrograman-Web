@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <title>Tugas Pertemuan 3</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form onsubmit="return cekForm()">
+        <label for="username">Username</label>
+        <div class="form-group">
+          <input type="text" name="username" id="username" />
+        </div>
+        <label for="alamat">Alamat</label>
+        <div class="form-group">
+          <textarea name="alamat" id="alamat"></textarea>
+        </div>
+        <label for="tanggal_lahir">Tanggal Lahir</label>
+        <div class="form-group">
+          <input type="date" name="tanggal_lahir" id="tanggal_lahir" />
+        </div>
+        <div class="form-group">
+          <span>Jenis Kelamin:</span>
+          <div class="radio">
+            <input type="radio" name="jenis_kelamin" value="laki-laki" id="laki-laki" />
+            <label for="laki-laki">Laki-Laki</label>
+            <input type="radio" name="jenis_kelamin" value="perempuan" id="perempuan" />
+            <label for="perempuan">Perempuan</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <span>Hobby:</span>
+          <div class="checkbox">
+            <input type="checkbox" name="hobby" value="membaca" id="membaca" />
+            <label for="membaca">Makan</label>
+            <input type="checkbox" name="hobby" value="menulis" id="menulis" />
+            <label for="menulis">Rebahan</label>
+            <input type="checkbox" name="hobby" value="tidur" id="tidur" />
+            <label for="tidur">Scroll sosmed</label>
+          </div>
+        </div>
+        <label for="pekerjaan">Pekerjaan:</label>
+        <div class="list">
+            <select name="pekerjaan" id="pekerjaan">
+        </div>
+            <option value="mahasiswa">Mahasiswa</option>
+            <option value="programmer">Programmer</option>
+            <option value="polisi">Polisi</option>
+          </select>
+        <br>
+        <div class="form-group">
+          <input type="checkbox" name="check" value="true" id="check" />
+          <label for="check">Apakah Anda yakin ingin mengirimkan data ini?</label>
+        </div>
+        <div class="box">
+            <div class="box-submit">
+            <input type="submit" value="Submit" />
+            </div>
+            <div class="box-reset">
+            <input type="reset" value="Reset" />
+            </div>
+        </div>
+    </form>      
+  </body>
+</html>
