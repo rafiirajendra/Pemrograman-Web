@@ -85,8 +85,8 @@ textarea {
 }
 
 .checkbox input[type="checkbox"] {
-    margin-right: 10px;
-    transform: scale(1.1);
+    width: 15px;
+    height: 15px;
 }
 
 .checkbox label {
@@ -95,4 +95,15 @@ textarea {
 
 .list {
     align-items: center;
+}
+
+.ceklis {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.ceklis [type="checkbox"] {
+    width: 15px;
+    height: 15px;
 }
