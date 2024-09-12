@@ -6,10 +6,11 @@ form {
     width: 500px;
     margin: 50px auto;
     text-align: left;
+    font-size: 2.4vh;
 }
 
 body{
-    background-color: #f5f5f5;
+    background-color: #d6d4d4;
 }
 
 .form-group {
@@ -93,10 +94,6 @@ textarea {
     align-items: center;
 }
 
-.list {
-    align-items: center;
-}
-
 .ceklis {
     display: flex;
     align-items: center;
@@ -106,4 +103,25 @@ textarea {
 .ceklis [type="checkbox"] {
     width: 15px;
     height: 15px;
+}
+
+#pekerjaan {
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  #pekerjaan option {
+    font-size: 14px;
+    padding: 10px;
+    background-color: #fff;
+    color: #333;
+}
+
+#pekerjaan option:checked {
+    background-color: #ddd;
+    color: black;
 }
