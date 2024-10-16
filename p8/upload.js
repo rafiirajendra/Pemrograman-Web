@@ -1,7 +1,15 @@
 $(document).ready(function(){
-    $("#upload").submit(function(e){
-        e.preventDefault();
+    $("#file").change(function(e){
+        if (this.files.length > 0) {
+            $('#upload-button').prop('disabled', false).css('opacity', 1);
+        } else {
+            $('#upload-button').prop('disabled', true).css('opacity', 0.5);
+        }
+    });
 
+    $('#upload-form').submit(function(e){
+        e.preventDefault();
+        
         var formData = new FormData(this);
 
         $.ajax({
