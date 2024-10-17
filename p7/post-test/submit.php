@@ -10,9 +10,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     for ($i = 0; $i < count($nama); $i++) {
         echo '<tr>';
-        echo '<td>' . htmlspecialchars($nama[$i]) . '</td>';
-        echo '<td>' . htmlspecialchars($alamat[$i]) . '</td>';
-        echo '<td>' . htmlspecialchars($no_telpon[$i]) . '</td>';
+        echo '<td>' . ($nama[$i]) . '</td>';
+        echo '<td>' . ($alamat[$i]) . '</td>';
+        echo '<td>' . ($no_telpon[$i]) . '</td>';
         echo '</tr>';
     }
 
