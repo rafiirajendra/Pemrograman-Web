@@ -8,14 +8,13 @@ document.addEventListener("DOMContentLoaded", function () {
         const email = document.getElementById("email").value;
         const alamat = document.getElementById("alamat").value;
 
-        let confirmationMessage = `
-        Apakah data yang Anda masukkan sudah benar?\n
+        let confirmationMessage = 
+        `Apakah data yang Anda masukkan sudah benar?\n
         Produk: ${product}\n
         Jumlah: ${quantity}\n
         Nama: ${name}\n
         Email: ${email}\n
-        Alamat: ${alamat}\n
-        `;
+        Alamat: ${alamat}\n`;
 
         if (!confirm(confirmationMessage)) {
             event.preventDefault();
