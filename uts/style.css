@@ -11,6 +11,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
 }
+    
 
 header {
     background-color: #fff12c;
@@ -42,12 +43,6 @@ nav {
     margin-right: 10px;
 }
 
-nav h1 {
-    color: #333;
-    font-size: 24px;
-    margin: 0;
-}
-
 nav ul {
     list-style: none;
     display: flex;
@@ -57,10 +52,6 @@ nav ul {
 
 nav ul li {
     margin-left: 25px;
-}
-
-nav ul li:first-child {
-    margin-left: 0;
 }
 
 nav ul li a {
@@ -76,7 +67,6 @@ nav ul li a:hover {
     color: #ffffff;
 }
 
-
 .home {
     height: 100vh;
     background-image: url('img/home-background.jpg');
@@ -87,7 +77,6 @@ nav ul li a:hover {
     justify-content: center;
     text-align: center;
     color: #fff;
-    position: relative;
 }
 
 .home-content {
@@ -197,8 +186,6 @@ h2 {
 .container-about h2 {
     margin-bottom: -2px;
 }
-
-
 footer {
     background-color:#fff12c;
     color: #000000;
