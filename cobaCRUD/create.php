@@ -14,8 +14,8 @@ if (isset($_POST['simpan'])) {
     // Memastikan bahwa semua field diisi
     if ($nim && $nama && $jurusan) {
         // Menggunakan placeholders
-        $sql = "INSERT INTO mahasiswa (nim, nama, jurusan) VALUES (:nim, :nama, :jurusan)";
-        $stmt = $koneksi->prepare($sql);
+        $stmt = "INSERT INTO mahasiswa (nim, nama, jurusan) VALUES (:nim, :nama, :jurusan)";
+        $stmt = $koneksi->prepare($stmt);
         $stmt->bindParam(':nim', $nim);
         $stmt->bindParam(':nama', $nama);
         $stmt->bindParam(':jurusan', $jurusan);
