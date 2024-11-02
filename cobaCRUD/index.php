@@ -20,10 +20,6 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
         .card {
             margin-top: 25px;
         }
-
-        .navbar bg-body-tertiary {
-            border-radius: 10px;
-        }
     </style>
 </head>
 
