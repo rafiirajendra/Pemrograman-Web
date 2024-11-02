@@ -9,7 +9,7 @@ $sukses = "";
 
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
-    // Fetch existing data
+    // Ambil data yang ada
     $stmt = $koneksi->prepare("SELECT * FROM mahasiswa WHERE id = :id");
     $stmt->bindParam(':id', $id);
     $stmt->execute();
