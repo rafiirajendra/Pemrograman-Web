@@ -44,29 +44,27 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
                 <table class="table table-bordered table-striped">
                     <thead>
                         <tr>
-                            <th>No</th>
-                            <th>Nama</th>
-                            <th>NIM</th>
-                            <th>Jurusan</th>
-                            <th>Aksi</th>
+                            <th scope="col">No</th>
+                            <th scope="col">Nama</th>
+                            <th scope="col">NIM</th>
+                            <th scope="col">Jurusan</th>
+                            <th scope="col">Aksi</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <?php
-                        $i = 1;
-                        foreach ($result as $row) {
-                            echo "<tr>";
-                            echo "<td>" . $i++ . "</td>";
-                            echo "<td>" . $row["nama"] . "</td>";
-                            echo "<td>" . $row["nim"] . "</td>";
-                            echo "<td>" . $row["jurusan"] . "</td>";
-                            echo "<td>
-                                    <button class='btn btn-primary'>Edit</button>
-                                    <button class='btn btn-danger'>Delete</button>
-                                  </td>";
-                            echo "</tr>";
-                        }
-                        ?>
+                        <?php $i = 1; ?>
+                        <?php foreach ($result as $row): ?>
+                            <tr>
+                                <td><?= $i++ ?></td>
+                                <td><?= htmlspecialchars($row["nama"]) ?></td>
+                                <td><?= htmlspecialchars($row["nim"]) ?></td>
+                                <td><?= htmlspecialchars($row["jurusan"]) ?></td>
+                                <td>
+                                    <a href="update.php?id=<?= $row["id"] ?>" class="btn btn-primary">Edit</a>
+                                    <a href="delete.php?id=<?= $row["id"] ?>" class="btn btn-danger" onclick="return confirm('Yakin ingin menghapus data ini?');">Delete</a>
+                                </td>
+                            </tr>
+                        <?php endforeach; ?>
                     </tbody>
                 </table>
             </div>

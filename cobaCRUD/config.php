@@ -9,3 +9,4 @@ $koneksi = new PDO("sqlsrv:server=$servername;database=$database", $username, $p
 if (!$koneksi) {
     die("Koneksi gagal: " . $koneksi->connect_error);
 }
+?>
