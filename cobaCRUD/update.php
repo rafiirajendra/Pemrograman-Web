@@ -77,7 +77,7 @@ if (isset($_POST['simpan'])) {
         <!-- Mengupdate Data -->
         <div class="card">
             <div class="card-header">
-                Update Data Mahasiswa
+                Edit Data Mahasiswa
             </div>
             <div class="card-body">
                 <form action="" method="POST">

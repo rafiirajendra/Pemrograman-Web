@@ -59,7 +59,7 @@ if (isset($_POST['simpan'])) {
         <!-- Memasukkan Data -->
         <div class="card">
             <div class="card-header">
-                Create / Edit Data
+                Tambah Data Mahasiswa
             </div>
             <div class="card-body">
                 <form action="" method="POST">
