@@ -16,9 +16,6 @@ if (isset($_POST['simpan'])) {
         // Menggunakan placeholders
         $stmt = "INSERT INTO mahasiswa (nim, nama, jurusan) VALUES (:nim, :nama, :jurusan)";
         $stmt = $koneksi->prepare($stmt);
-        $stmt->bindParam(':nim', $nim);
-        $stmt->bindParam(':nama', $nama);
-        $stmt->bindParam(':jurusan', $jurusan);
 
         if ($stmt->execute()) {
             header("Location: index.php");
