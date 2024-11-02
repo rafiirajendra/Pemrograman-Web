@@ -29,7 +29,7 @@ if (isset($_POST['simpan'])) {
     $nama = $_POST["nama"];
     $jurusan = $_POST["jurusan"];
 
-    // Ensure all fields are filled
+    // Pastikan semua bidang terisi
     if ($nim && $nama && $jurusan) {
         // Update data
         $sql = "UPDATE mahasiswa SET nim = :nim, nama = :nama, jurusan = :jurusan WHERE id = :id";
