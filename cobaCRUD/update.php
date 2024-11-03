@@ -5,7 +5,6 @@ $nim = "";
 $nama = "";
 $jurusan = "";
 $error = "";
-$sukses = "";
 
 if (isset($_GET['id'])) {
     $id = $_GET['id'];

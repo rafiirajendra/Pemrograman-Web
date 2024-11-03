@@ -4,7 +4,6 @@ $nim = "";
 $nama = "";
 $jurusan = "";
 $error = "";
-$sukses = "";
 
 if (isset($_POST['simpan'])) {
     $nim = $_POST["nim"];
