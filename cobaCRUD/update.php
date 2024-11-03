@@ -10,7 +10,7 @@ $sukses = "";
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
     // Ambil data yang ada
-    $stmt = $koneksi->prepare("SELECT * FROM mahasiswa WHERE id = :id");
+    $stmt = $koneksi->prepare("SELECT * FROM dbo.mahasiswa WHERE id = :id");
     $stmt->bindParam(':id', $id);
     $stmt->execute();
     $data = $stmt->fetch(PDO::FETCH_ASSOC);
